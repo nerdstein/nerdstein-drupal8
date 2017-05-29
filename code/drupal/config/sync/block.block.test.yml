@@ -1,0 +1,25 @@
+uuid: e4d36632-649f-45f6-b9e3-073d019bf16f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:section:d10d347c-10a5-4205-9774-0ed68b710473'
+  module:
+    - block_content
+  theme:
+    - nerdstein
+id: test
+theme: nerdstein
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:d10d347c-10a5-4205-9774-0ed68b710473'
+settings:
+  id: 'block_content:d10d347c-10a5-4205-9774-0ed68b710473'
+  label: test
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

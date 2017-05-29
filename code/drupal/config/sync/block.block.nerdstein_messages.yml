@@ -1,0 +1,22 @@
+uuid: 5363c0ab-63e7-43d8-ab9f-487f3f0e0e3b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nerdstein
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: nerdstein_messages
+theme: nerdstein
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

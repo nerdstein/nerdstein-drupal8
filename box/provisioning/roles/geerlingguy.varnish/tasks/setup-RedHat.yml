@@ -1,0 +1,29 @@
+---
+- name: Ensure Varnish dependencies are installed.
+  yum: name={{ item }} state=present
+  with_items:
+    - gcc
+    - libedit-devel
+    - initscripts
+    - redhat-rpm-config
+
+- name: Add Varnish repository.
+  yum:
+    name: https://repo.varnish-cache.org/redhat/varnish-{{ varnish_version }}.el6.rpm
+    state: present
+  when: ansible_distribution_major_version|int < 7
+
+- name: Set a string for the varnish repository identifier.
+  set_fact:
+    varnish_yum_repo: "varnish-{{ varnish_version }},epel"
+
+- name: Set repo fact appropriately.
+  set_fact:
+    varnish_yum_enablerepo: "{{ varnish_yum_repo if (ansible_distribution_major_version|int < 7) else 'epel' }}"
+
+- name: Install Varnish.
+  yum:
+    name: "{{ varnish_package_name }}"
+    state: installed
+    enablerepo: "{{ varnish_yum_enablerepo }}"
+    disablerepo: "*"

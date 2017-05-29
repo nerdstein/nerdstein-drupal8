@@ -1,0 +1,5 @@
+global-styling:
+  version: VERSION
+  css:
+    base:
+      ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/css/style.css: {}

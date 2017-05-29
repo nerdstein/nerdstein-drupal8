@@ -1,0 +1,20 @@
+uuid: da052c4c-f9fc-4e80-a198-162bf32c408d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nerdstein
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: nerdstein_local_actions
+theme: nerdstein
+region: content
+weight: -8
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

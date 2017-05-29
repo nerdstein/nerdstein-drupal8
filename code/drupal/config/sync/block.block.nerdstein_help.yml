@@ -1,0 +1,22 @@
+uuid: c845b3e5-ec3a-46fa-98c1-61176eefac68
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - nerdstein
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: nerdstein_help
+theme: nerdstein
+region: content
+weight: -8
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }
