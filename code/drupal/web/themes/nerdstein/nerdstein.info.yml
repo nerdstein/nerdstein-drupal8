@@ -13,7 +13,7 @@ regions:
   header: Header
   featured: Featured
   content: Content
-  sidebar_first: First sidebar
+  sidebar: Sidebar
   footer: Footer
 
 component-libraries:

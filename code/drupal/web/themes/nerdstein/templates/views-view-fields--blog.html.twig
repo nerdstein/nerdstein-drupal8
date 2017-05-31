@@ -1,0 +1,7 @@
+{% include "@molecules/list-element.twig" with {
+"title": fields.title.content,
+"link_url": fields.title.url,
+"body": fields.body.content,
+"tag_list": fields.field_tags.content,
+"posted_date": fields.created.content
+} %}
