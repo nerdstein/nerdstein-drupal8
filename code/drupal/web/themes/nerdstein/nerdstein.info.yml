@@ -3,8 +3,10 @@ type: theme
 description: 'Nerdstein 2017 redesign.'
 package: Nerdstein
 core: 8.x
-
 base theme: classy
+
+libraries:
+  - nerdstein/global-styling
 
 # Regions
 regions:
