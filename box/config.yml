@@ -1,0 +1,21 @@
+vagrant_hostname: nerdstein.local
+vagrant_machine_name: nerdstein
+vagrant_ip: 192.168.88.88
+
+
+drupal_composer_project_options: "--prefer-source --stability dev --no-interaction"
+
+installed_extras:
+  - drush
+
+drush_version: "8.1.11"
+
+
+vagrant_synced_folders:
+  # The first synced folder will be used for the default Drupal installation, if
+  # any of the build_* settings are 'true'. By default the folder is set to
+  # the drupal-vm folder.
+  - local_path: ../code
+    destination: /var/www/drupalvm
+    type: nfs
+    create: true
