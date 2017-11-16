@@ -10,6 +10,9 @@ installed_extras:
 
 drush_version: "8.1.11"
 
+drupal_install_profile: config_installer
+
+
 
 vagrant_synced_folders:
   # The first synced folder will be used for the default Drupal installation, if

@@ -10,8 +10,8 @@ dependencies:
     - nerdstein
 id: test
 theme: nerdstein
-region: header
-weight: 0
+region: sidebar
+weight: -7
 provider: null
 plugin: 'block_content:d10d347c-10a5-4205-9774-0ed68b710473'
 settings:
