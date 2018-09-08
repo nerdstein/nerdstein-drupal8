@@ -2,3 +2,5 @@ vendor
 settings.local.php
 *.sql
 d7
+.idea
+.DS_Store

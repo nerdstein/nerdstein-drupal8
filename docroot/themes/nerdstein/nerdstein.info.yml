@@ -19,18 +19,8 @@ regions:
 component-libraries:
   atoms:
     paths:
-      - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/01-atoms/01-list-title
-      - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/01-atoms/02-list-body
-      - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/01-atoms/03-list-image
       - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/01-atoms/04-blog-tag
-      - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/01-atoms/05-list-posted-on
-      - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/01-atoms/06-section-heading
-      - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/01-atoms/07-section-content
   molecules:
-    paths:
-      - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/02-molecules/01-blog-tags
-      - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/02-molecules/02-list-element
-      - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/02-molecules/03-section
+    paths: { }
   organisms:
-    paths:
-      - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/03-organisms/01-blog-list
+    paths: { }

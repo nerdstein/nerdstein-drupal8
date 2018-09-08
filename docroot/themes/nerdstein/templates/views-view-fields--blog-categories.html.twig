@@ -1,0 +1,6 @@
+{% include "@atoms/blog-tag.twig" with {
+"tag_name": fields.name.content,
+"tag_icon_url": fields.field_tag_icon.content,
+"tag_color": 'highlight-tag--' ~ fields.field_box_color.content,
+"tag_link_url": fields.view_taxonomy_term.content
+} %}
