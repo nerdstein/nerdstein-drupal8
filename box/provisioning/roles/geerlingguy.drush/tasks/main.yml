@@ -1,6 +1,0 @@
----
-- include: install.yml
-  when: not drush_install_from_source
-
-- include: source-install.yml
-  when: drush_install_from_source

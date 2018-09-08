@@ -1,2 +1,2 @@
-.idea
-box/.vagrant
+vendor
+settings.local.php
