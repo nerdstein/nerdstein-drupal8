@@ -1,0 +1,11 @@
+uuid: 76dc00b3-b95f-4a41-a460-6136c9ebc2e9
+langcode: en
+status: true
+dependencies: {  }
+name: Portfolio
+type: portfolio
+description: 'Portfolio content.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

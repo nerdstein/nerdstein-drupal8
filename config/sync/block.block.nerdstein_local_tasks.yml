@@ -1,0 +1,22 @@
+uuid: fbbbdb13-89a2-4dcb-9936-ca689f99b19f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nerdstein
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: nerdstein_local_tasks
+theme: nerdstein
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

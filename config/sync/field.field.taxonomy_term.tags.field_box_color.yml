@@ -1,0 +1,23 @@
+uuid: 313f576a-2b80-479b-ad84-b9e544ff8559
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_box_color
+    - taxonomy.vocabulary.tags
+  module:
+    - options
+id: taxonomy_term.tags.field_box_color
+field_name: field_box_color
+entity_type: taxonomy_term
+bundle: tags
+label: 'Box Color'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: bluebox
+default_value_callback: ''
+settings: {  }
+field_type: list_string

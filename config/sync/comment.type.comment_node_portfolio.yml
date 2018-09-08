@@ -1,0 +1,8 @@
+uuid: c957e42d-09d3-4f85-8380-47584960476b
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_portfolio
+label: 'Portfolio comment'
+target_entity_type_id: node
+description: null

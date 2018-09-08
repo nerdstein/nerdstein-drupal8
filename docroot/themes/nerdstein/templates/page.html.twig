@@ -74,16 +74,16 @@
       </div>
     {% endif %}
     <div id="main-wrapper" class="layout-main-wrapper layout-container clearfix">
+      {% if page.sidebar %}
+        <div id="sidebar" class="column sidebar">
+          <aside class="section" role="complementary">
+              {{ page.sidebar }}
+          </aside>
+        </div>
+      {% endif %}
       <div id="main" class="layout-main clearfix">
         {{ page.breadcrumb }}
         <main id="content" class="column main-content" role="main">
-          {% if page.sidebar %}
-            <div id="sidebar" class="column sidebar">
-              <aside class="section" role="complementary">
-                  {{ page.sidebar }}
-              </aside>
-            </div>
-          {% endif %}
           <section class="section">
             <a id="main-content" tabindex="-1"></a>
             {{ page.content }}

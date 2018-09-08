@@ -1,0 +1,30 @@
+uuid: 15412651-98b2-4975-95e0-16766061623c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blog_list
+  module:
+    - system
+    - views
+  theme:
+    - nerdstein
+id: views_block__blog_list_block_1
+theme: nerdstein
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:blog_list-block_1'
+settings:
+  id: 'views_block:blog_list-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

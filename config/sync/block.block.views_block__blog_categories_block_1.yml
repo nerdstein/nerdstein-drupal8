@@ -1,0 +1,24 @@
+uuid: 5fe2dfeb-4b7f-4ba4-878d-42d99a8a94b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blog_categories
+  module:
+    - views
+  theme:
+    - nerdstein
+id: views_block__blog_categories_block_1
+theme: nerdstein
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:blog_categories-block_1'
+settings:
+  id: 'views_block:blog_categories-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

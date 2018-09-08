@@ -1,0 +1,33 @@
+uuid: 49fd541b-12c9-4a9a-9ea8-5310e14b7862
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - taxonomy
+id: taxonomy_term.field_box_color
+field_name: field_box_color
+entity_type: taxonomy_term
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: purplebox
+      label: Purple
+    -
+      value: bluebox
+      label: Blue
+    -
+      value: greenbox
+      label: Green
+    -
+      value: orangebox
+      label: Orange
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

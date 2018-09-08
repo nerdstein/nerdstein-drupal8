@@ -1,0 +1,20 @@
+uuid: 5a272899-0623-4c9e-892e-0bd7a42da0e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - nerdstein
+id: nerdstein_user_login
+theme: nerdstein
+region: header
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  provider: user
+  label_display: '0'
+visibility: {  }

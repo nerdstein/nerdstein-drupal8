@@ -1,0 +1,27 @@
+uuid: 5a4460b5-28ce-4849-81de-019a16e05393
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_presentation_file
+    - node.type.presentation
+  module:
+    - file
+id: node.presentation.field_presentation_file
+field_name: field_presentation_file
+entity_type: node
+bundle: presentation
+label: 'Presentation File'
+description: 'PDF, PPT, PPTX'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: presentations
+  file_extensions: 'pdf ppt pptx'
+  max_filesize: '10 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

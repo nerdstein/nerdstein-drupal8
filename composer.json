@@ -30,7 +30,7 @@
         "drupal/devel": "1.x-dev",
         "webflo/drupal-finder": "^0.3.0",
         "webmozart/path-util": "^2.3",
-        "nerdstein/nerdstein-design-library": "0.2"
+        "nerdstein/nerdstein-design-library": "1.1"
     },
     "require-dev": {
         "behat/mink": "~1.7",

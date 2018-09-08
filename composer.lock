@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ecb0d7930bb4483904ebb79d7b5a5d2e",
+    "content-hash": "31af5eb35cede2180971ab8b3713f1e2",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2439,24 +2439,24 @@
         },
         {
             "name": "nerdstein/nerdstein-design-library",
-            "version": "0.2",
+            "version": "1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nerdstein/nerdstein-design-library.git",
-                "reference": "b14c59b632f02a5b10e7c078101716a7add90367"
+                "reference": "8a816c041f06bdb68b8ff65262e7a9d07f9c3b1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nerdstein/nerdstein-design-library/zipball/b14c59b632f02a5b10e7c078101716a7add90367",
-                "reference": "b14c59b632f02a5b10e7c078101716a7add90367",
+                "url": "https://api.github.com/repos/nerdstein/nerdstein-design-library/zipball/8a816c041f06bdb68b8ff65262e7a9d07f9c3b1c",
+                "reference": "8a816c041f06bdb68b8ff65262e7a9d07f9c3b1c",
                 "shasum": ""
             },
             "type": "design-library",
             "support": {
-                "source": "https://github.com/nerdstein/nerdstein-design-library/tree/0.2",
+                "source": "https://github.com/nerdstein/nerdstein-design-library/tree/1.1",
                 "issues": "https://github.com/nerdstein/nerdstein-design-library/issues"
             },
-            "time": "2017-05-29T00:41:30+00:00"
+            "time": "2018-09-08T16:35:56+00:00"
         },
         {
             "name": "nikic/php-parser",

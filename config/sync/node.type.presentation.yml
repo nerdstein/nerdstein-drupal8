@@ -1,0 +1,18 @@
+uuid: 90856c6b-00e7-4eda-9b08-fcbba5e636dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: Presentation
+type: presentation
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

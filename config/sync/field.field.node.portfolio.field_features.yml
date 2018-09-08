@@ -1,0 +1,21 @@
+uuid: 7e09afd7-d2d2-4647-8c09-2285de233142
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_features
+    - node.type.portfolio
+  module:
+    - text
+id: node.portfolio.field_features
+field_name: field_features
+entity_type: node
+bundle: portfolio
+label: Features
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,27 @@
+uuid: b4739642-3f51-46e9-9a93-2693fcbc937e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_images
+    - node.type.blog_post
+  module:
+    - file
+id: node.blog_post.field_images
+field_name: field_images
+entity_type: node
+bundle: blog_post
+label: Images
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: blog
+  file_extensions: 'jpg jpeg gif png'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

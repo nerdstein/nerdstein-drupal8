@@ -1,2 +1,4 @@
 vendor
 settings.local.php
+*.sql
+d7
