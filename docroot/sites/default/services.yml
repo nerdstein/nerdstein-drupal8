@@ -64,7 +64,7 @@ parameters:
     #
     # Not recommended in production environments
     # @default null
-    auto_reload: null
+    auto_reload: true
     # Twig cache:
     #
     # By default, Twig templates will be compiled and stored in the filesystem
@@ -75,7 +75,7 @@ parameters:
     #
     # Not recommended in production environments
     # @default true
-    cache: true
+    cache: false
   renderer.config:
     # Renderer required cache contexts:
     #
@@ -125,7 +125,7 @@ parameters:
   #
   # Not recommended in production environments
   # @default false
-  http.response.debug_cacheability_headers: false
+  http.response.debug_cacheability_headers: true
   factory.keyvalue:
     {}
     # Default key/value storage service to use.
@@ -172,3 +172,7 @@ parameters:
     maxAge: false
     # Sets the Access-Control-Allow-Credentials header.
     supportsCredentials: false
+services:
+  cache.backend.null:
+    class: Drupal\Core\Cache\NullBackendFactory
+

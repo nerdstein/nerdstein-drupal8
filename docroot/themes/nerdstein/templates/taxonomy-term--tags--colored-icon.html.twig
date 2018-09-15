@@ -1,0 +1,7 @@
+{% include "@atoms/blog-tag.twig" with {
+"tag_name": term.name.value,
+"tag_icon_url": elements.field_colored_icon[0]['#markup'],
+"tag_color": 'highlight-tag--' ~ elements.field_box_color[0]['#markup'],
+"tag_link_url": url
+} %}
+

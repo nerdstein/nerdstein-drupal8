@@ -21,6 +21,8 @@ component-libraries:
     paths:
       - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/01-atoms/04-blog-tag
   molecules:
-    paths: { }
+    paths:
+      - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/02-molecules/01-blog-tags
+      - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/02-molecules/02-list-element
   organisms:
     paths: { }
