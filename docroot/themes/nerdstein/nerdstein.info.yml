@@ -19,7 +19,11 @@ regions:
 component-libraries:
   atoms:
     paths:
+      - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/01-atoms/01-list-title
+      - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/01-atoms/02-list-body
+      - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/01-atoms/03-list-image
       - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/01-atoms/04-blog-tag
+      - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/01-atoms/05-list-posted-on
   molecules:
     paths:
       - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/02-molecules/01-blog-tags

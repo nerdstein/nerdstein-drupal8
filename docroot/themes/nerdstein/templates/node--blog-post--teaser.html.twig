@@ -1,0 +1,23 @@
+<div class="list-element">
+
+    <div class="list-element-body">
+        {% if image_url %}
+            <div class="list-element-image">
+                {% include "@atoms/list-image.twig" %}
+            </div>
+        {% endif %}
+        {% include "@atoms/list-title.twig" with {
+            "title": label
+        } %}
+        {% include "@atoms/list-posted-on.twig" with {
+            "posted_date": date
+        } %}
+        {% include "@atoms/list-body.twig" with {
+            "body": content.body
+        } %}
+        {%  for blog_tag in content.field_tags['#items'] %}
+            {{ content.field_tags[(loop.index-1)] }}
+        {% endfor %}
+    </div>
+
+</div>
