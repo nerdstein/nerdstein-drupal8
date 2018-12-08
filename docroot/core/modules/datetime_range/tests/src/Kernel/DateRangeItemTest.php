@@ -3,7 +3,7 @@
 namespace Drupal\Tests\datetime_range\Kernel;
 
 use Drupal\Core\Entity\Entity\EntityViewDisplay;
-use Drupal\datetime_range\Plugin\Field\FieldType\DateRangeItem;
+use Drupal\datetime_range\Plugin\Field\FieldType\ImageLinkFieldItem;
 use Drupal\entity_test\Entity\EntityTest;
 use Drupal\field\Entity\FieldConfig;
 use Drupal\field\Entity\FieldStorageConfig;
@@ -49,7 +49,7 @@ class DateRangeItemTest extends FieldKernelTestBase {
       'field_name' => mb_strtolower($this->randomMachineName()),
       'entity_type' => 'entity_test',
       'type' => 'daterange',
-      'settings' => ['datetime_type' => DateRangeItem::DATETIME_TYPE_DATE],
+      'settings' => ['datetime_type' => ImageLinkFieldItem::DATETIME_TYPE_DATE],
     ]);
     $this->fieldStorage->save();
 
@@ -81,7 +81,7 @@ class DateRangeItemTest extends FieldKernelTestBase {
    * Tests the field configured for date-only.
    */
   public function testDateOnly() {
-    $this->fieldStorage->setSetting('datetime_type', DateRangeItem::DATETIME_TYPE_DATE);
+    $this->fieldStorage->setSetting('datetime_type', ImageLinkFieldItem::DATETIME_TYPE_DATE);
     $field_name = $this->fieldStorage->getName();
     // Create an entity.
     $entity = EntityTest::create([

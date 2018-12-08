@@ -4,14 +4,15 @@ status: true
 dependencies:
   module:
     - system
+    - user
   theme:
     - nerdstein
 _core:
   default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
 id: nerdstein_messages
 theme: nerdstein
-region: header
-weight: 0
+region: content
+weight: -8
 provider: null
 plugin: system_messages_block
 settings:
@@ -19,4 +20,12 @@ settings:
   label: 'Status messages'
   provider: system
   label_display: '0'
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

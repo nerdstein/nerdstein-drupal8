@@ -7,7 +7,7 @@ use Drupal\Core\Datetime\DrupalDateTime;
 use Drupal\Core\Datetime\Entity\DateFormat;
 use Drupal\datetime\Plugin\Field\FieldType\DateTimeItemInterface;
 use Drupal\Tests\datetime\Functional\DateTestBase;
-use Drupal\datetime_range\Plugin\Field\FieldType\DateRangeItem;
+use Drupal\datetime_range\Plugin\Field\FieldType\ImageLinkFieldItem;
 use Drupal\entity_test\Entity\EntityTest;
 use Drupal\field\Entity\FieldConfig;
 use Drupal\field\Entity\FieldStorageConfig;
@@ -56,7 +56,7 @@ class DateRangeFieldTest extends DateTestBase {
       $this->assertEquals($timezone, $this->config('system.date')->get('timezone.default'), 'Time zone set to ' . $timezone);
 
       // Ensure field is set to a date-only field.
-      $this->fieldStorage->setSetting('datetime_type', DateRangeItem::DATETIME_TYPE_DATE);
+      $this->fieldStorage->setSetting('datetime_type', ImageLinkFieldItem::DATETIME_TYPE_DATE);
       $this->fieldStorage->save();
 
       // Display creation form.
@@ -279,7 +279,7 @@ class DateRangeFieldTest extends DateTestBase {
     $field_label = $this->field->label();
 
     // Ensure the field to a datetime field.
-    $this->fieldStorage->setSetting('datetime_type', DateRangeItem::DATETIME_TYPE_DATETIME);
+    $this->fieldStorage->setSetting('datetime_type', ImageLinkFieldItem::DATETIME_TYPE_DATETIME);
     $this->fieldStorage->save();
 
     // Display creation form.
@@ -452,7 +452,7 @@ class DateRangeFieldTest extends DateTestBase {
     $field_label = $this->field->label();
 
     // Ensure field is set to a all-day field.
-    $this->fieldStorage->setSetting('datetime_type', DateRangeItem::DATETIME_TYPE_ALLDAY);
+    $this->fieldStorage->setSetting('datetime_type', ImageLinkFieldItem::DATETIME_TYPE_ALLDAY);
     $this->fieldStorage->save();
 
     // Display creation form.
@@ -623,7 +623,7 @@ class DateRangeFieldTest extends DateTestBase {
     $field_label = $this->field->label();
 
     // Ensure field is set to a date only field.
-    $this->fieldStorage->setSetting('datetime_type', DateRangeItem::DATETIME_TYPE_DATE);
+    $this->fieldStorage->setSetting('datetime_type', ImageLinkFieldItem::DATETIME_TYPE_DATE);
     $this->fieldStorage->save();
 
     // Change the widget to a datelist widget.
@@ -660,7 +660,7 @@ class DateRangeFieldTest extends DateTestBase {
     $this->assertNoFieldByXPath($xpathIncr, NULL, 'Increment element not found for Date Only.');
 
     // Change the field is set to an all day field.
-    $this->fieldStorage->setSetting('datetime_type', DateRangeItem::DATETIME_TYPE_ALLDAY);
+    $this->fieldStorage->setSetting('datetime_type', ImageLinkFieldItem::DATETIME_TYPE_ALLDAY);
     $this->fieldStorage->save();
 
     // Change the widget to a datelist widget.
@@ -694,7 +694,7 @@ class DateRangeFieldTest extends DateTestBase {
     $this->assertNoFieldByXPath($xpathIncr, NULL, 'Increment element not found for Date Only.');
 
     // Change the field to a datetime field.
-    $this->fieldStorage->setSetting('datetime_type', DateRangeItem::DATETIME_TYPE_DATETIME);
+    $this->fieldStorage->setSetting('datetime_type', ImageLinkFieldItem::DATETIME_TYPE_DATETIME);
     $this->fieldStorage->save();
 
     // Change the widget to a datelist widget.
@@ -982,7 +982,7 @@ class DateRangeFieldTest extends DateTestBase {
       'field_name' => $field_name,
       'entity_type' => 'node',
       'type' => 'daterange',
-      'settings' => ['datetime_type' => DateRangeItem::DATETIME_TYPE_DATE],
+      'settings' => ['datetime_type' => ImageLinkFieldItem::DATETIME_TYPE_DATE],
     ]);
     $field_storage->save();
 
@@ -1141,7 +1141,7 @@ class DateRangeFieldTest extends DateTestBase {
    */
   public function testInvalidField() {
     // Change the field to a datetime field.
-    $this->fieldStorage->setSetting('datetime_type', DateRangeItem::DATETIME_TYPE_DATETIME);
+    $this->fieldStorage->setSetting('datetime_type', ImageLinkFieldItem::DATETIME_TYPE_DATETIME);
     $this->fieldStorage->save();
     $field_name = $this->fieldStorage->getName();
     $field_label = $this->field->label();
@@ -1349,7 +1349,7 @@ class DateRangeFieldTest extends DateTestBase {
       'entity_type' => 'node',
       'type' => 'daterange',
       'settings' => [
-        'datetime_type' => DateRangeItem::DATETIME_TYPE_DATE,
+        'datetime_type' => ImageLinkFieldItem::DATETIME_TYPE_DATE,
       ],
     ]);
     $field_storage->save();

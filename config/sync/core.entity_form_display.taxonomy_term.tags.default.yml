@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.taxonomy_term.tags.field_box_color
+    - field.field.taxonomy_term.tags.field_colored_icon
     - field.field.taxonomy_term.tags.field_tag_icon
     - image.style.thumbnail
     - taxonomy.vocabulary.tags
@@ -29,6 +30,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_colored_icon:
+    weight: 33
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   field_tag_icon:
     weight: 31

@@ -1,0 +1,36 @@
+uuid: 757b7d4d-7754-45fd-8f78-b71233dc2fe1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.colored_icon
+    - field.field.taxonomy_term.tags.field_box_color
+    - field.field.taxonomy_term.tags.field_colored_icon
+    - field.field.taxonomy_term.tags.field_tag_icon
+    - taxonomy.vocabulary.tags
+  module:
+    - image
+    - options
+id: taxonomy_term.tags.colored_icon
+targetEntityType: taxonomy_term
+bundle: tags
+mode: colored_icon
+content:
+  field_box_color:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_colored_icon:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    type: image_url
+    region: content
+hidden:
+  description: true
+  field_tag_icon: true

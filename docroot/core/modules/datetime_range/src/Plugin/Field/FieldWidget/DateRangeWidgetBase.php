@@ -7,7 +7,7 @@ use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\datetime\Plugin\Field\FieldType\DateTimeItemInterface;
 use Drupal\datetime\Plugin\Field\FieldWidget\DateTimeWidgetBase;
-use Drupal\datetime_range\Plugin\Field\FieldType\DateRangeItem;
+use Drupal\datetime_range\Plugin\Field\FieldType\ImageLinkFieldItem;
 
 /**
  * Base class for the 'daterange_*' widgets.
@@ -57,11 +57,11 @@ class DateRangeWidgetBase extends DateTimeWidgetBase {
         /** @var \Drupal\Core\Datetime\DrupalDateTime $start_date */
         $start_date = $item['value'];
         switch ($this->getFieldSetting('datetime_type')) {
-          case DateRangeItem::DATETIME_TYPE_DATE:
+          case ImageLinkFieldItem::DATETIME_TYPE_DATE:
             $format = DateTimeItemInterface::DATE_STORAGE_FORMAT;
             break;
 
-          case DateRangeItem::DATETIME_TYPE_ALLDAY:
+          case ImageLinkFieldItem::DATETIME_TYPE_ALLDAY:
             // All day fields start at midnight on the starting date, but are
             // stored like datetime fields, so we need to adjust the time.
             // This function is called twice, so to prevent a double conversion
@@ -84,11 +84,11 @@ class DateRangeWidgetBase extends DateTimeWidgetBase {
         /** @var \Drupal\Core\Datetime\DrupalDateTime $end_date */
         $end_date = $item['end_value'];
         switch ($this->getFieldSetting('datetime_type')) {
-          case DateRangeItem::DATETIME_TYPE_DATE:
+          case ImageLinkFieldItem::DATETIME_TYPE_DATE:
             $format = DateTimeItemInterface::DATE_STORAGE_FORMAT;
             break;
 
-          case DateRangeItem::DATETIME_TYPE_ALLDAY:
+          case ImageLinkFieldItem::DATETIME_TYPE_ALLDAY:
             // All day fields end at midnight on the end date, but are
             // stored like datetime fields, so we need to adjust the time.
             // This function is called twice, so to prevent a double conversion

@@ -1,0 +1,12 @@
+uuid: 59ee1121-8f5a-4595-9648-c48b2642966c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.image_links
+id: block_content.image_links.default
+targetEntityType: block_content
+bundle: image_links
+mode: default
+content: {  }
+hidden: {  }

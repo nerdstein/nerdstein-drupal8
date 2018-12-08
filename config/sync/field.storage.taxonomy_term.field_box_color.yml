@@ -12,16 +12,16 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: purplebox
+      value: purple
       label: Purple
     -
-      value: bluebox
+      value: blue
       label: Blue
     -
-      value: greenbox
+      value: green
       label: Green
     -
-      value: orangebox
+      value: orange
       label: Orange
   allowed_values_function: ''
 module: options

@@ -1,0 +1,10 @@
+uuid: 3de1aa6c-43e9-4030-a036-000a560311f7
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.colored_icon
+label: 'Colored Icon'
+targetEntityType: taxonomy_term
+cache: true

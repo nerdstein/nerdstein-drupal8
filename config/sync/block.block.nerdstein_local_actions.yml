@@ -9,7 +9,7 @@ _core:
 id: nerdstein_local_actions
 theme: nerdstein
 region: content
-weight: -20
+weight: -5
 provider: null
 plugin: local_actions_block
 settings:

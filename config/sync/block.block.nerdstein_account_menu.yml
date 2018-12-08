@@ -13,7 +13,7 @@ _core:
 id: nerdstein_account_menu
 theme: nerdstein
 region: header
-weight: 0
+weight: -6
 provider: null
 plugin: 'system_menu_block:account'
 settings:

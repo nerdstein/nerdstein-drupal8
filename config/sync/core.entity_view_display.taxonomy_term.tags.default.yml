@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.taxonomy_term.tags.field_box_color
+    - field.field.taxonomy_term.tags.field_colored_icon
     - field.field.taxonomy_term.tags.field_tag_icon
     - taxonomy.vocabulary.tags
   module:
@@ -28,6 +29,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: list_default
+    region: content
+  field_colored_icon:
+    weight: 3
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
     region: content
   field_tag_icon:
     weight: 1

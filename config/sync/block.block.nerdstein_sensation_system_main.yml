@@ -11,7 +11,7 @@ _core:
 id: nerdstein_sensation_system_main
 theme: nerdstein
 region: content
-weight: 0
+weight: -1
 provider: null
 plugin: system_main_block
 settings:

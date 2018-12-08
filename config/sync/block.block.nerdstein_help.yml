@@ -11,7 +11,7 @@ _core:
 id: nerdstein_help
 theme: nerdstein
 region: content
-weight: -30
+weight: 0
 provider: null
 plugin: help_block
 settings:

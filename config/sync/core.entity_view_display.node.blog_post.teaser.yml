@@ -20,17 +20,21 @@ content:
   body:
     label: hidden
     weight: 0
-    type: text_summary_or_trimmed
+    type: text_trimmed
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: content
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
+  field_tags:
+    type: entity_reference_entity_view
+    weight: 1
     region: content
+    label: hidden
+    settings:
+      view_mode: colored_icon
+      link: false
+    third_party_settings: {  }
 hidden:
   comment_node_blog_post: true
   field_images: true
-  field_tags: true
+  links: true

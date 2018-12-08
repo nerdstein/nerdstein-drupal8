@@ -9,7 +9,7 @@ _core:
 id: nerdstein_local_tasks
 theme: nerdstein
 region: content
-weight: -40
+weight: -7
 provider: null
 plugin: local_tasks_block
 settings:

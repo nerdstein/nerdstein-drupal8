@@ -1,0 +1,8 @@
+uuid: 55674fb7-5328-48b5-bc61-3d3581710dd3
+langcode: en
+status: true
+dependencies: {  }
+id: image_links
+label: 'Image Links'
+revision: 1
+description: 'One or more image links rendered in one block'

@@ -1,6 +1,6 @@
 uuid: 1dfb9e06-1728-483e-9d30-3c250648627e
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.tools
@@ -12,8 +12,8 @@ _core:
   default_config_hash: NeHSoqm4XFqA7_0bDmR429ZZQt3LRbZMNRJTMsFyOfI
 id: nerdstein_tools
 theme: nerdstein
-region: header
-weight: 0
+region: content
+weight: -4
 provider: null
 plugin: 'system_menu_block:tools'
 settings:
