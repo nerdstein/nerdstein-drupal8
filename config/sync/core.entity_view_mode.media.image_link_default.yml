@@ -1,0 +1,10 @@
+uuid: 9f65d330-efac-4745-b3bd-17542e71e6f7
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.image_link_default
+label: 'Image Link default'
+targetEntityType: media
+cache: true

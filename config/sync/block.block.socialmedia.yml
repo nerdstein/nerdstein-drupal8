@@ -1,0 +1,25 @@
+uuid: 9a27c140-d91c-48f4-a198-ae07dbf9f2d9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:image_links:28f575b7-d23e-4f2c-b54a-17cda5b02c16'
+  module:
+    - block_content
+  theme:
+    - nerdstein
+id: socialmedia
+theme: nerdstein
+region: header
+weight: -7
+provider: null
+plugin: 'block_content:28f575b7-d23e-4f2c-b54a-17cda5b02c16'
+settings:
+  id: 'block_content:28f575b7-d23e-4f2c-b54a-17cda5b02c16'
+  label: 'Social media'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

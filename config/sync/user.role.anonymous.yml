@@ -13,3 +13,4 @@ permissions:
   - 'access content'
   - 'search content'
   - 'use text format filtered_html'
+  - 'view media'

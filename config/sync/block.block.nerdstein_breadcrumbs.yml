@@ -11,7 +11,7 @@ _core:
 id: nerdstein_breadcrumbs
 theme: nerdstein
 region: header
-weight: -9
+weight: -8
 provider: null
 plugin: system_breadcrumb_block
 settings:

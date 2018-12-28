@@ -1,0 +1,28 @@
+uuid: 030d05d8-cac3-4e41-a202-010362fc337a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.image_links
+    - field.storage.block_content.field_image_link
+    - media.type.image_link
+id: block_content.image_links.field_image_link
+field_name: field_image_link
+entity_type: block_content
+bundle: image_links
+label: 'Image Link'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image_link: image_link
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

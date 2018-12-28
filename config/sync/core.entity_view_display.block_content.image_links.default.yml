@@ -4,9 +4,19 @@ status: true
 dependencies:
   config:
     - block_content.type.image_links
+    - field.field.block_content.image_links.field_image_link
 id: block_content.image_links.default
 targetEntityType: block_content
 bundle: image_links
 mode: default
-content: {  }
+content:
+  field_image_link:
+    type: entity_reference_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
 hidden: {  }

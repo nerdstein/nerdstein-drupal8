@@ -11,7 +11,7 @@ _core:
 id: nerdstein_system_powered_by
 theme: nerdstein
 region: header
-weight: -4
+weight: -2
 provider: null
 plugin: system_powered_by_block
 settings:

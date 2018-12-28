@@ -4,11 +4,21 @@ status: true
 dependencies:
   config:
     - block_content.type.image_links
+    - field.field.block_content.image_links.field_image_link
 id: block_content.image_links.default
 targetEntityType: block_content
 bundle: image_links
 mode: default
 content:
+  field_image_link:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   info:
     type: string_textfield
     weight: -5

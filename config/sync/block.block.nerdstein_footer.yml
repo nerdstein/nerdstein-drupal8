@@ -13,7 +13,7 @@ _core:
 id: nerdstein_footer
 theme: nerdstein
 region: header
-weight: -8
+weight: -6
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
