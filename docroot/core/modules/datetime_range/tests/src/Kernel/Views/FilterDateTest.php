@@ -2,7 +2,7 @@
 
 namespace Drupal\Tests\datetime_range\Kernel\Views;
 
-use Drupal\datetime_range\Plugin\Field\FieldType\ImageLinkFieldItem;
+use Drupal\datetime_range\Plugin\Field\FieldType\DateRangeItem;
 use Drupal\field\Entity\FieldStorageConfig;
 use Drupal\node\Entity\Node;
 use Drupal\Tests\datetime\Kernel\Views\DateTimeHandlerTestBase;
@@ -51,7 +51,7 @@ class FilterDateTest extends DateTimeHandlerTestBase {
 
     // Change field storage to date-only.
     $storage = FieldStorageConfig::load('node.' . static::$field_name);
-    $storage->setSetting('datetime_type', ImageLinkFieldItem::DATETIME_TYPE_DATE);
+    $storage->setSetting('datetime_type', DateRangeItem::DATETIME_TYPE_DATE);
     $storage->save();
 
     // Retrieve tomorrow, today and yesterday dates.

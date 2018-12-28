@@ -106,7 +106,7 @@ class DateRangeFieldItemList extends DateTimeFieldItemList {
       // only provide a default value for the first item, as do all fields.
       // Otherwise, there is no way to clear out unwanted values on multiple
       // value fields.
-      $storage_format = $definition->getSetting('datetime_type') == ImageLinkFieldItem::DATETIME_TYPE_DATE ? DateTimeItemInterface::DATE_STORAGE_FORMAT : DateTimeItemInterface::DATETIME_STORAGE_FORMAT;
+      $storage_format = $definition->getSetting('datetime_type') == DateRangeItem::DATETIME_TYPE_DATE ? DateTimeItemInterface::DATE_STORAGE_FORMAT : DateTimeItemInterface::DATETIME_STORAGE_FORMAT;
       $default_values = [[]];
 
       if (!empty($default_value[0]['default_date_type'])) {

@@ -1,0 +1,5 @@
+<ul class="social-media--list">
+    {% for key, item in content.field_image_link if key|first != '#' %}
+    {{ item }}
+    {% endfor %}
+</ul>

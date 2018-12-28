@@ -551,7 +551,6 @@ class FileWidget extends WidgetBase implements ContainerFactoryPluginInterface {
     $parents = $element['#field_parents'];
 
     $submitted_values = NestedArray::getValue($form_state->getValues(), array_slice($button['#parents'], 0, -2));
-
     foreach ($submitted_values as $delta => $submitted_value) {
       if (empty($submitted_value['fids'])) {
         unset($submitted_values[$delta]);

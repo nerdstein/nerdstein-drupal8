@@ -771,6 +771,6 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 $config_directories['sync'] = $app_root . '/../config/sync';
 
 // Automatically generated include for settings managed by ddev.
-/*if (file_exists($app_root . '/' . $site_path . '/settings.ddev.php')) {
+if (file_exists($app_root . '/' . $site_path . '/settings.ddev.php')) {
   include $app_root . '/' . $site_path . '/settings.ddev.php';
-}*/
+}
