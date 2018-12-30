@@ -1,9 +1,11 @@
 name: Nerdstein
 type: theme
-description: 'Nerdstein 2017 redesign.'
+description: 'Nerdstein 2017 redesign'
 package: Nerdstein
 core: 8.x
 base theme: classy
+
+logo: logo.png
 
 libraries:
   - nerdstein/global-styling
@@ -25,6 +27,7 @@ component-libraries:
       - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/01-atoms/04-blog-tag
       - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/01-atoms/05-list-posted-on
       - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/01-atoms/07-sidebar-content
+      - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/01-atoms/08-logo
       - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/01-atoms/09-social-icon
   molecules:
     paths:
