@@ -1,0 +1,24 @@
+uuid: 8a7686fe-04d9-4120-a868-6569b8c66e6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blog_featured_list
+  module:
+    - views
+  theme:
+    - nerdstein
+id: views_block__blog_featured_list_block_1
+theme: nerdstein
+region: header
+weight: 0
+provider: null
+plugin: 'views_block:blog_featured_list-block_1'
+settings:
+  id: 'views_block:blog_featured_list-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

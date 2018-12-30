@@ -11,7 +11,7 @@ dependencies:
 id: socialmedia
 theme: nerdstein
 region: header
-weight: -7
+weight: -3
 provider: null
 plugin: 'block_content:28f575b7-d23e-4f2c-b54a-17cda5b02c16'
 settings:

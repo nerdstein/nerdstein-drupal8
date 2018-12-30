@@ -9,7 +9,7 @@ dependencies:
 id: nerdstein_user_login
 theme: nerdstein
 region: header
-weight: -3
+weight: -2
 provider: null
 plugin: user_login_block
 settings:

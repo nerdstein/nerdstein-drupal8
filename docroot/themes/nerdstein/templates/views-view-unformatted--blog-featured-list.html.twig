@@ -1,0 +1,7 @@
+
+{% include "@atoms/sidebar-heading.twig" with {
+    "heading": title
+} %}
+{% for row in rows %}
+    {{ row.content }}
+{% endfor %}
