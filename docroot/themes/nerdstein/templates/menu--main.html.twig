@@ -1,0 +1,13 @@
+{% set arr = [] %}
+{% for item in items %}
+{%
+    set arr = arr|merge([{
+        content_title: item.title,
+        content_url: render_var(item.url)
+    }])
+%}
+{% endfor %}
+
+{% include "@molecules/sidebar-menu.twig" with {
+    "sidebar_menulist": arr
+} %}
