@@ -1,7 +1,10 @@
-
+<div class="grid-cell grid-cell--content">
+    <div class="sidebar-list">
 {% include "@atoms/sidebar-heading.twig" with {
-    "heading": title
+    "heading": 'Featured Posts'
 } %}
 {% for row in rows %}
     {{ row.content }}
 {% endfor %}
+    </div>
+</div>
