@@ -1,6 +1,7 @@
 <div class="list-element">
 
     <div class="list-element-body">
+        <div class="list-element-content">
         {% if image_url %}
             <div class="list-element-image">
                 {% include "@atoms/list-image.twig" %}
@@ -18,6 +19,7 @@
         {%  for blog_tag in content.field_tags['#items'] %}
             {{ content.field_tags[(loop.index-1)] }}
         {% endfor %}
+        </div>
     </div>
 
 </div>
