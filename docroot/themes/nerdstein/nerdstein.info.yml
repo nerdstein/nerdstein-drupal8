@@ -31,6 +31,7 @@ component-libraries:
       - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/01-atoms/08-logo
       - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/01-atoms/09-social-icon
       - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/01-atoms/12-sidebar-list-element
+      - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/01-atoms/15-nav-icon
   molecules:
     paths:
       - ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/_patterns/02-molecules/01-blog-tags

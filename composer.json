@@ -66,10 +66,14 @@
             "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
         ],
         "post-install-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+            "cp -R vendor/nerdstein/nerdstein-design-library/design-library/source/images/ docroot/themes/nerdstein/",
+            "cp -R vendor/nerdstein/nerdstein-design-library/design-library/source/webfonts/ docroot/themes/nerdstein/"
         ],
         "post-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+            "cp -R vendor/nerdstein/nerdstein-design-library/design-library/source/images/ docroot/themes/nerdstein/",
+            "cp -R vendor/nerdstein/nerdstein-design-library/design-library/source/webfonts/ docroot/themes/nerdstein/"
         ]
     },
     "extra": {

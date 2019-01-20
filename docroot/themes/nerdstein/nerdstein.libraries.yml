@@ -5,3 +5,5 @@ global-styling:
       ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/css/style.css: {}
   js:
     ../../../vendor/nerdstein/nerdstein-design-library/design-library/source/js/theme-scripts.js: {}
+  dependencies:
+    - core/jquery

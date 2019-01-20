@@ -71,15 +71,21 @@
         <div class="sidebar">
             <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t }}">
                 <div class="grid section">
-                    {{ page.secondary_menu }}
                     {{ page.header }}
-                    {{ page.primary_menu }}
+                    <div class="grid-cell grid-cell--menu">
+                        {% include "@atoms/nav-icon.twig" with {
+                            "nav_icon": 'fas fa-bars',
+                            "nav_message": 'Menu',
+                            "nav_link": '#'
+                        } %}
+                    </div>
+                    {% if page.sidebar %}
+                        {{ page.sidebar }}
+                    {% endif %}
                 </div>
             </header>
 
-        {% if page.sidebar %}
-          {{ page.sidebar }}
-        {% endif %}
+
         </div>
 
       <div class="content">
