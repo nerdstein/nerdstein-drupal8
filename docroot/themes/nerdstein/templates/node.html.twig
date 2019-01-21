@@ -7,18 +7,23 @@
                 {% include "@atoms/list-image.twig" %}
             </div>
         {% endif %}
-        {% include "@atoms/list-title.twig" with {
-            "title": label
-        } %}
+        {% if not page %}
+          {% include "@atoms/list-title.twig" with {
+              "title": label,
+              "link_url": page ? false : url
+          } %}
+        {% endif %}
         {% include "@atoms/list-posted-on.twig" with {
             "posted_date": date
         } %}
         {% include "@atoms/list-body.twig" with {
             "body": content.body
         } %}
-        {%  for blog_tag in content.field_tags['#items'] %}
-            {{ content.field_tags[(loop.index-1)] }}
-        {% endfor %}
+        {% if content.field_tags %}
+          {% for blog_tag in content.field_tags['#items'] %}
+              {{ content.field_tags[(loop.index-1)] }}
+          {% endfor %}
+        {%  endif %}
         </div>
     </div>
 
