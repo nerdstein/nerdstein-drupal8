@@ -44,11 +44,12 @@ content:
     third_party_settings: {  }
     region: content
   field_tags:
-    label: above
+    label: hidden
     weight: 2
-    type: entity_reference_label
+    type: entity_reference_entity_view
     settings:
-      link: true
+      view_mode: colored_icon
+      link: false
     third_party_settings: {  }
     region: content
   links:
