@@ -1,0 +1,19 @@
+uuid: b647d80f-190b-4434-bfe8-adb5dd2885d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.raw_block_type
+    - field.storage.block_content.field_raw_block
+id: block_content.raw_block_type.field_raw_block
+field_name: field_raw_block
+entity_type: block_content
+bundle: raw_block_type
+label: 'raw block'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

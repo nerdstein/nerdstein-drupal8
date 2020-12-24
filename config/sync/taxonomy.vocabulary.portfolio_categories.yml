@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Portfolio categories'
 vid: portfolio_categories
 description: ''
-hierarchy: 0
 weight: 0

@@ -1,0 +1,8 @@
+uuid: 958f2442-5fc5-4f8e-9d18-a367c333b253
+langcode: en
+status: true
+dependencies: {  }
+id: raw_block_type
+label: 'Raw Block Type'
+revision: 1
+description: 'No HTML, raw values'

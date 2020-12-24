@@ -1,0 +1,41 @@
+uuid: 7f6f2808-a945-4027-af4b-7fd6e9123a50
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_files.default
+    - field.field.node.files.comment_node_files
+    - field.field.node.files.field_files
+    - node.type.files
+  module:
+    - comment
+    - file
+    - user
+id: node.files.default
+targetEntityType: node
+bundle: files
+mode: default
+content:
+  comment_node_files:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_files:
+    label: above
+    weight: 0
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

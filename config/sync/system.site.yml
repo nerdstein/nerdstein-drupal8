@@ -5,7 +5,7 @@ slogan: 'Home of Nerdstein'
 page:
   403: /
   404: /
-  front: /node/108
+  front: /node/118
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

@@ -1,0 +1,20 @@
+uuid: 63e64934-5e9f-401f-b189-fc366c1d4bd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.raw_block_type
+    - field.field.block_content.raw_block_type.field_raw_block
+id: block_content.raw_block_type.default
+targetEntityType: block_content
+bundle: raw_block_type
+mode: default
+content:
+  field_raw_block:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

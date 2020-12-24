@@ -1,0 +1,27 @@
+uuid: d41ff6d9-7fca-42bd-963a-70bdeca04978
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - node.type.files
+  module:
+    - file
+id: node.files.field_files
+field_name: field_files
+entity_type: node
+bundle: files
+label: Files
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: uploaded
+  file_extensions: 'txt doc docx ppt key jpg png jpeg gif'
+  max_filesize: '250 KB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file
