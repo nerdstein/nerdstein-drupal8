@@ -1,6 +1,14 @@
+{% if media.field_type.0.value == 'association'  %}
+{% include "@atoms/footer-image.twig" with {
+  "message": media.field_link.0.title,
+  "link": media.field_link.0.url,
+  "image_url": file_url(media.field_media_image_1.0.entity.uri.value)
+} %}
+{% else %}
 {% include "@atoms/social-icon.twig" with {
     "name": media.field_link.0.title,
     "message": media.field_link.0.title,
     "link": media.field_link.0.url,
     "image": file_url(media.field_media_image_1.0.entity.uri.value)
 } %}
+{% endif %}
