@@ -13,9 +13,11 @@
               "link_url": page ? false : url
           } %}
         {% endif %}
+        {% if display_submitted %}
         {% include "@atoms/list-posted-on.twig" with {
             "posted_date": date
         } %}
+        {% endif %}
         {% include "@atoms/list-body.twig" with {
             "body": content.body
         } %}
