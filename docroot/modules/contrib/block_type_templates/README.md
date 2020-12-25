@@ -45,13 +45,16 @@ CONFIGURATION
 
 This module does not need any additional configurations.
 
-The Block Type Templates module provides the following theme suggestion:
+The Block Type Templates module provides the following theme suggestions:
 
-```block--block-content-{{ machine-name  }}.html.twig```
+```block--block-content-{{ machine-name }}.html.twig```
+```block--block-content-{{ machine-name }}--{{ view-mode }}.html.twig```
 
 For example, a custom block type with machine name testing_this_out would now
-have a corresponding Twig template for all blocks of that type
-block--block-content-testing-this-out.html.twig.
+have a corresponding Twig template for all blocks of that type 
+block--block-content-testing-this-out.html.twig. In the case of a 'teaser' view mode for 
+the same custom block type, a block--block-content-testing-this-out--teaser.html.twig 
+Twig template would be available.
 
 The Twig template assumes all of the standard markup found in all of the other
 block templates, including the corresponding fields of that block type.

@@ -3,9 +3,11 @@
 namespace Drupal\Tests\editor\Kernel;
 
 use Drupal\Core\Cache\Cache;
+use Drupal\Core\File\FileSystemInterface;
 use Drupal\file\Entity\File;
 use Drupal\filter\FilterPluginCollection;
 use Drupal\KernelTests\KernelTestBase;
+use Drupal\Tests\TestFileCreationTrait;
 
 /**
  * Tests Editor module's file reference filter.
@@ -14,12 +16,14 @@ use Drupal\KernelTests\KernelTestBase;
  */
 class EditorFileReferenceFilterTest extends KernelTestBase {
 
+  use TestFileCreationTrait;
+
   /**
    * Modules to enable.
    *
    * @var array
    */
-  public static $modules = [
+  protected static $modules = [
     'system',
     'filter',
     'editor',
@@ -36,7 +40,7 @@ class EditorFileReferenceFilterTest extends KernelTestBase {
   /**
    * {@inheritdoc}
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
     $this->installConfig(['system']);
     $this->installEntitySchema('file');
@@ -125,6 +129,28 @@ class EditorFileReferenceFilterTest extends KernelTestBase {
     $output = $test($input);
     $this->assertIdentical($expected_output, $output->getProcessedText());
     $this->assertEqual($cache_tag, $output->getCacheTags());
+
+    // Add a valid image for test lazy loading feature.
+    /** @var array stdClass */
+    $files = $this->getTestFiles('image');
+    $image = reset($files);
+    \Drupal::service('file_system')->copy($image->uri, 'public://llama.jpg', FileSystemInterface::EXISTS_REPLACE);
+    [$width, $height] = getimagesize('public://llama.jpg');
+    $dimensions = 'width="' . $width . '" height="' . $height . '"';
+
+    // Image dimensions and loading attributes are present.
+    $input = '<img src="llama.jpg" data-entity-type="file" data-entity-uuid="' . $uuid . '" />';
+    $expected_output = '<img src="/' . $this->siteDirectory . '/files/llama.jpg" data-entity-type="file" data-entity-uuid="' . $uuid . '" ' . $dimensions . ' loading="lazy" />';
+    $output = $test($input);
+    $this->assertSame($expected_output, $output->getProcessedText());
+    $this->assertEquals($cache_tag, $output->getCacheTags());
+
+    // Image dimensions and loading attributes are set manually.
+    $input = '<img src="llama.jpg" data-entity-type="file" data-entity-uuid="' . $uuid . '"width="41" height="21" loading="eager" />';
+    $expected_output = '<img src="/' . $this->siteDirectory . '/files/llama.jpg" data-entity-type="file" data-entity-uuid="' . $uuid . '" width="41" height="21" loading="eager" />';
+    $output = $test($input);
+    $this->assertSame($expected_output, $output->getProcessedText());
+    $this->assertEquals($cache_tag, $output->getCacheTags());
   }
 
 }

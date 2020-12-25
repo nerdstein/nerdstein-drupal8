@@ -33,7 +33,7 @@ class FilterFormTest extends BrowserTestBase {
   protected $adminUser;
 
   /**
-   * An basic user account that can only access basic HTML text format.
+   * A basic user account that can only access basic HTML text format.
    *
    * @var \Drupal\user\Entity\User
    */
@@ -42,7 +42,7 @@ class FilterFormTest extends BrowserTestBase {
   /**
    * {@inheritdoc}
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
 
     /** @var \Drupal\filter\FilterFormatInterface $filter_test_format */
@@ -227,7 +227,7 @@ class FilterFormTest extends BrowserTestBase {
       ]));
     }
 
-    $this->assertOptionSelected($id, $selected);
+    $this->assertTrue($this->assertSession()->optionExists($id, $selected)->isSelected());
   }
 
   /**
