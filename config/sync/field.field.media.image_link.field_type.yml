@@ -1,0 +1,23 @@
+uuid: 52915375-892f-4b34-ab83-6d65de814fa3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_type
+    - media.type.image_link
+  module:
+    - options
+id: media.image_link.field_type
+field_name: field_type
+entity_type: media
+bundle: image_link
+label: Type
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: social
+default_value_callback: ''
+settings: {  }
+field_type: list_string

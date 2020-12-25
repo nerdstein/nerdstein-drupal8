@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.media.image_link.field_link
     - field.field.media.image_link.field_media_image_1
+    - field.field.media.image_link.field_type
     - image.style.thumbnail
     - media.type.image_link
   module:
@@ -37,6 +38,12 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_type:
+    weight: 102
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   name:
     type: string_textfield

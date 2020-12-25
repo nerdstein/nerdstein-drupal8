@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.media.image_link_default
     - field.field.media.image_link.field_link
     - field.field.media.image_link.field_media_image_1
+    - field.field.media.image_link.field_type
     - media.type.image_link
   module:
     - image
@@ -37,6 +38,7 @@ content:
     region: content
 hidden:
   created: true
+  field_type: true
   name: true
   thumbnail: true
   uid: true

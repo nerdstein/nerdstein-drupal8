@@ -5,10 +5,12 @@ dependencies:
   config:
     - field.field.media.image_link.field_link
     - field.field.media.image_link.field_media_image_1
+    - field.field.media.image_link.field_type
     - media.type.image_link
   module:
     - image
     - link
+    - options
 id: media.image_link.default
 targetEntityType: media
 bundle: image_link
@@ -33,6 +35,13 @@ content:
       image_style: ''
     third_party_settings: {  }
     type: image_url
+    region: content
+  field_type:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
 hidden:
   created: true

@@ -1,0 +1,27 @@
+uuid: 9e842b05-a85d-4fa6-b00f-b4ad7d1f44f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - options
+id: media.field_type
+field_name: field_type
+entity_type: media
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: social
+      label: 'Social Media'
+    -
+      value: association
+      label: Association
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

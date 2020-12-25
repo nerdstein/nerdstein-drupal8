@@ -1,0 +1,25 @@
+uuid: dc307d2b-bb53-4dfa-8522-fe06a42ccbfa
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:image_links:e45a4cf7-9c12-4cf1-91ca-62bf8e26dd5c'
+  module:
+    - block_content
+  theme:
+    - nerdstein
+id: associations
+theme: nerdstein
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:e45a4cf7-9c12-4cf1-91ca-62bf8e26dd5c'
+settings:
+  id: 'block_content:e45a4cf7-9c12-4cf1-91ca-62bf8e26dd5c'
+  label: Associations
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
