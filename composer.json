@@ -27,6 +27,7 @@
         "drupal/components": "^1.0",
         "drupal/core": "~8.0",
         "drupal/devel": "^1.2",
+        "drupal/smart_trim": "^1.3",
         "nerdstein/nerdstein-design-library": "1.2",
         "webflo/drupal-finder": "^0.3.0",
         "webmozart/path-util": "^2.3",
