@@ -24,12 +24,12 @@ jobs:
         uses: fifsky/ssh-action@master
         with:
           command: |
-            sudo cd ${{ secrets.DEPLOY_DIR }}
-            sudo composer update
-            sudo vendor/bin/drush cache:rebuild
-            sudo vendor/bin/drush config:import -y
-            sudo vendor/bin/drush updatedb -y
-            sudo vendor/bin/drush cache:rebuild
+            cd ${{ secrets.DEPLOY_DIR }}
+            composer update
+            vendor/bin/drush cache:rebuild
+            vendor/bin/drush config:import -y
+            vendor/bin/drush updatedb -y
+            vendor/bin/drush cache:rebuild
           host: ${{ secrets.HOST }}
           user: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
