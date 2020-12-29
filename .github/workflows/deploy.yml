@@ -25,9 +25,9 @@ jobs:
         with:
           command: |
             cd ${{ secrets.DEPLOY_DIR }}
-            echo '${{ secrets.USER_PASS }}' | sudo -S git fetch --all
-            echo '${{ secrets.USER_PASS }}' | sudo -S git reset --hard origin/master
-            echo '${{ secrets.USER_PASS }}' | sudo -S composer install --optimize-autoloader
+            echo '${{ secrets.SSH_PASS }}' | sudo -S git fetch --all
+            echo '${{ secrets.SSH_PASS }}' | sudo -S git reset --hard origin/master
+            echo '${{ secrets.SSH_PASS }}' | sudo -S composer install --optimize-autoloader
             vendor/bin/drush cache:rebuild
             vendor/bin/drush config:import -y
             vendor/bin/drush updatedb -y
