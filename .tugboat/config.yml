@@ -59,7 +59,7 @@ services:
         # This results in smaller previews and reduces the build time.
         - composer require --dev drupal/stage_file_proxy
         - vendor/bin/drush pm:enable --yes stage_file_proxy
-        - vendor/bin/drush config:set --yes stage_file_proxy.settings origin "http://www.nerdstein.net"
+        - vendor/bin/drush config:set --yes stage_file_proxy.settings origin "${NS-SITE-URL}"
 
         # Set file permissions such that Drupal will not complain.
         - chgrp -R www-data "${DOCROOT}/sites/default/files"
@@ -94,6 +94,7 @@ services:
         # Copy a database dump from an external server. The public
         # SSH key found in the Tugboat Repository configuration must be
         # copied to the external server in order to use scp.
-        #- scp user@example.com:database.sql.gz /tmp/database.sql.gz
-        #- zcat /tmp/database.sql.gz | mysql tugboat
-        #- rm /tmp/database.sql.gz
+        - ssh "${NS-SITE-USER}"@"${NS-SITE-IP}" '~/make-db-backup.sh'
+        - scp "${NS-SITE-USER}"@"${NS-SITE-IP}":database.sql.gz /tmp/database.sql.gz
+        - zcat /tmp/database.sql.gz | mysql tugboat
+        - rm /tmp/database.sql.gz
