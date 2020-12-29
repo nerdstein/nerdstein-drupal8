@@ -1,0 +1,5 @@
+name: Nerdstein Updates
+type: module
+description: Adds a module for any update tasks.
+core_version_requirement: ^8 || ^9
+package: Custom
