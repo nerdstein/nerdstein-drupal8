@@ -32,5 +32,5 @@ jobs:
             vendor/bin/drush cache:rebuild
           host: ${{ secrets.HOST }}
           user: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.PRIVATE_KEY}}
+          key: ${{ secrets.SSH_KEY}}
       
