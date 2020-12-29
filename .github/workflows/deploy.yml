@@ -25,7 +25,9 @@ jobs:
         with:
           command: |
             cd ${{ secrets.DEPLOY_DIR }}
-            composer install --optimize-autoloader
+            sudo git fetch --all
+            sudo git reset --hard origin/master
+            sudo composer install --optimize-autoloader
             vendor/bin/drush cache:rebuild
             vendor/bin/drush config:import -y
             vendor/bin/drush updatedb -y
