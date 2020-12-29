@@ -76,7 +76,17 @@
             "docroot/libraries/{$name}": ["type:drupal-library"],
             "docroot/modules/contrib/{$name}": ["type:drupal-module"],
             "docroot/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "docroot/themes/contrib/{$name}": ["type:drupal-theme"]
+            "docroot/themes/contrib/{$name}": ["type:drupal-theme"],
+            "docroot/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "docroot/profiles/custom/{$name}": [
+                "type:drupal-custom-profile"
+            ],
+            "docroot/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ]
+
         }
     }
 }

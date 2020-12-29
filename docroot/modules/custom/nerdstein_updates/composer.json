@@ -1,0 +1,16 @@
+{
+    "name": "drupal/nerdstein_updates",
+    "description": "Runs ongoing site update tasks",
+    "type": "drupal-custom-module",
+    "homepage": "http://www.nerdstein.net",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "nerdstein",
+            "email": "nerdstein@gmail.com"
+        }
+    ],
+    "require": {
+        "drupal/core": "^8.7.7 || ^9"
+    }
+}

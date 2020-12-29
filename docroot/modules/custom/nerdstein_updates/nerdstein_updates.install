@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the module.
+ */
+
+/**
+ * Perform initial setup.
+ */
+function nerdstein_updates_install() {
+  // Clean up entity messaging.
+  $entity_type = [
+    'comment',
+    'node',
+    'node',
+    'node',
+  ];
+  $bundle = [
+    'comment_node_blog',
+    'blog',
+    'blog',
+    'blog',
+  ];
+  $field_name = [
+    'comment_body',
+    'body',
+    'field_image',
+    'field_tags',
+  ];
+  /** @var \Drupal\Core\KeyValueStore\KeyValueFactoryInterface $key_value_factory */
+  $key_value_factory = \Drupal::service('keyvalue');
+  \Drupal::service('messenger')->addStatus('In the install task');
+
+  for ($i=0; $i<count($entity_type); $i++) {
+    $et = $entity_type[$i];
+    $b = $bundle[$i];
+    $fn = $field_name[$i];
+    \Drupal::service('messenger')->addStatus('et: ' . $et . ', b: ' . $b . ', fn: ' . $fn);
+    $field_map_kv_store = $key_value_factory->get('entity.definitions.bundle_field_map');
+    $map = $field_map_kv_store->get($et);
+    // Remove the specific field from the bundle field map for the page bundle.
+    unset($map[$fn]['bundles'][$b]);
+    $field_map_kv_store->set($et, $map);
+  }
+}
