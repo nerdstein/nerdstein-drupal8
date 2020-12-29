@@ -59,7 +59,7 @@ services:
         # This results in smaller previews and reduces the build time.
         - composer require --dev drupal/stage_file_proxy
         - vendor/bin/drush pm:enable --yes stage_file_proxy
-        - vendor/bin/drush config:set --yes stage_file_proxy.settings origin "http://www.nerdstein.net"
+        - vendor/bin/drush config:set --yes stage_file_proxy.settings origin "${NERDSITEURI}"
 
         # Set file permissions such that Drupal will not complain.
         - chgrp -R www-data "${DOCROOT}/sites/default/files"
@@ -81,8 +81,8 @@ services:
 
   # This 'mysql' key acts as the hostname to access the service by from the php service.
   mysql:
-    # Use the latest available 5.x version of MySQL
-    image: tugboatqa/mariadb:10.5
+    # Use the latest available 8.x version of MySQL
+    image: tugboatqa/mysql:8
 
     # A set of commands to run while building this service
     commands:
@@ -94,6 +94,7 @@ services:
         # Copy a database dump from an external server. The public
         # SSH key found in the Tugboat Repository configuration must be
         # copied to the external server in order to use scp.
-        #- scp user@example.com:database.sql.gz /tmp/database.sql.gz
-        #- zcat /tmp/database.sql.gz | mysql tugboat
-        #- rm /tmp/database.sql.gz
+        - ssh "${NERDSITEUSER}"@"${NERDSITEIP}" '~/make-db-backup.sh'
+        - scp "${NERDSITEUSER}"@"${NERDSITEIP}":database.sql.gz /tmp/database.sql.gz
+        - zcat /tmp/database.sql.gz | mysql tugboat
+        - rm /tmp/database.sql.gz
