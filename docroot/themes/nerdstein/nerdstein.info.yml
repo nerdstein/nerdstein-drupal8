@@ -3,6 +3,7 @@ type: theme
 description: 'Nerdstein 2017 redesign'
 package: Nerdstein
 core: 8.x
+core_version_requirement: ^8 || ^9
 base theme: classy
 
 logo: logo.png
