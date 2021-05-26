@@ -1178,16 +1178,16 @@
         },
         {
             "name": "doctrine/cache",
-            "version": "1.11.0",
+            "version": "1.11.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "a9c1b59eba5a08ca2770a76eddb88922f504e8e0"
+                "reference": "3bb5588cec00a0268829cc4a518490df6741af9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/a9c1b59eba5a08ca2770a76eddb88922f504e8e0",
-                "reference": "a9c1b59eba5a08ca2770a76eddb88922f504e8e0",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/3bb5588cec00a0268829cc4a518490df6741af9d",
+                "reference": "3bb5588cec00a0268829cc4a518490df6741af9d",
                 "shasum": ""
             },
             "require": {
@@ -1257,7 +1257,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/cache/issues",
-                "source": "https://github.com/doctrine/cache/tree/1.11.0"
+                "source": "https://github.com/doctrine/cache/tree/1.11.3"
             },
             "funding": [
                 {
@@ -1273,7 +1273,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-04-13T14:46:17+00:00"
+            "time": "2021-05-25T09:01:55+00:00"
         },
         {
             "name": "doctrine/collections",
@@ -1995,16 +1995,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.1.8",
+            "version": "9.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "487661aa08e9474ef234074844e7b1b8fa6e3c3c"
+                "reference": "2c649d5807f08f8c7945d1c6ffb4bb21d5c7849a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/487661aa08e9474ef234074844e7b1b8fa6e3c3c",
-                "reference": "487661aa08e9474ef234074844e7b1b8fa6e3c3c",
+                "url": "https://api.github.com/repos/drupal/core/zipball/2c649d5807f08f8c7945d1c6ffb4bb21d5c7849a",
+                "reference": "2c649d5807f08f8c7945d1c6ffb4bb21d5c7849a",
                 "shasum": ""
             },
             "require": {
@@ -2241,9 +2241,9 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/9.1.8"
+                "source": "https://github.com/drupal/core/tree/9.1.9"
             },
-            "time": "2021-05-05T11:09:15+00:00"
+            "time": "2021-05-25T09:18:28+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
@@ -2338,16 +2338,16 @@
         },
         {
             "name": "drupal/core-recommended",
-            "version": "9.1.8",
+            "version": "9.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "1cacf0f150d64ca03785c4f9dddfa5d8788da1f2"
+                "reference": "c29e4707ba567b7b80b86a8fa6aea0d0e50967b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/1cacf0f150d64ca03785c4f9dddfa5d8788da1f2",
-                "reference": "1cacf0f150d64ca03785c4f9dddfa5d8788da1f2",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/c29e4707ba567b7b80b86a8fa6aea0d0e50967b0",
+                "reference": "c29e4707ba567b7b80b86a8fa6aea0d0e50967b0",
                 "shasum": ""
             },
             "require": {
@@ -2356,7 +2356,7 @@
                 "doctrine/annotations": "1.11.1",
                 "doctrine/lexer": "1.2.1",
                 "doctrine/reflection": "1.2.2",
-                "drupal/core": "9.1.8",
+                "drupal/core": "9.1.9",
                 "egulias/email-validator": "2.1.22",
                 "guzzlehttp/guzzle": "6.5.5",
                 "guzzlehttp/promises": "1.4.0",
@@ -2417,9 +2417,9 @@
             ],
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/9.1.8"
+                "source": "https://github.com/drupal/core-recommended/tree/9.1.9"
             },
-            "time": "2021-05-05T11:09:15+00:00"
+            "time": "2021-05-25T09:18:28+00:00"
         },
         {
             "name": "drupal/devel",
@@ -4886,16 +4886,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v5.2.8",
+            "version": "v5.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "eccb8be70d7a6a2230d05f6ecede40f3fdd9e252"
+                "reference": "ccccb9d48ca42757dd12f2ca4bf857a4e217d90d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/eccb8be70d7a6a2230d05f6ecede40f3fdd9e252",
-                "reference": "eccb8be70d7a6a2230d05f6ecede40f3fdd9e252",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/ccccb9d48ca42757dd12f2ca4bf857a4e217d90d",
+                "reference": "ccccb9d48ca42757dd12f2ca4bf857a4e217d90d",
                 "shasum": ""
             },
             "require": {
@@ -4927,7 +4927,7 @@
             "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v5.2.8"
+                "source": "https://github.com/symfony/finder/tree/v5.2.9"
             },
             "funding": [
                 {
@@ -4943,7 +4943,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-10T14:39:23+00:00"
+            "time": "2021-05-16T13:07:46+00:00"
         },
         {
             "name": "symfony/http-client-contracts",
@@ -7472,16 +7472,16 @@
         },
         {
             "name": "symfony/browser-kit",
-            "version": "v4.4.22",
+            "version": "v4.4.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",
-                "reference": "4c8b42b4aae93517e8f67d68c5cbe69413e3e3c1"
+                "reference": "7e6a92d5d97d826830924bd8cd22daa452c9e467"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/4c8b42b4aae93517e8f67d68c5cbe69413e3e3c1",
-                "reference": "4c8b42b4aae93517e8f67d68c5cbe69413e3e3c1",
+                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/7e6a92d5d97d826830924bd8cd22daa452c9e467",
+                "reference": "7e6a92d5d97d826830924bd8cd22daa452c9e467",
                 "shasum": ""
             },
             "require": {
@@ -7523,7 +7523,7 @@
             "description": "Simulates the behavior of a web browser, allowing you to make requests, click on links and submit forms programmatically",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/browser-kit/tree/v4.4.22"
+                "source": "https://github.com/symfony/browser-kit/tree/v4.4.24"
             },
             "funding": [
                 {
@@ -7539,7 +7539,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-04-08T07:40:10+00:00"
+            "time": "2021-05-16T09:52:47+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -7596,16 +7596,16 @@
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v4.4.20",
+            "version": "v4.4.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "be133557f1b0e6672367325b508e65da5513a311"
+                "reference": "fc0bd1f215b0cd9f4efdc63bb66808f3417331bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/be133557f1b0e6672367325b508e65da5513a311",
-                "reference": "be133557f1b0e6672367325b508e65da5513a311",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/fc0bd1f215b0cd9f4efdc63bb66808f3417331bc",
+                "reference": "fc0bd1f215b0cd9f4efdc63bb66808f3417331bc",
                 "shasum": ""
             },
             "require": {
@@ -7649,7 +7649,7 @@
             "description": "Eases DOM navigation for HTML and XML documents",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/dom-crawler/tree/v4.4.20"
+                "source": "https://github.com/symfony/dom-crawler/tree/v4.4.24"
             },
             "funding": [
                 {
@@ -7665,7 +7665,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-14T12:29:41+00:00"
+            "time": "2021-05-16T09:52:47+00:00"
         }
     ],
     "aliases": [],
