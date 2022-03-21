@@ -1568,8 +1568,8 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Doctrine\\Common\\Inflector\\": "lib/Doctrine/Common/Inflector",
-                    "Doctrine\\Inflector\\": "lib/Doctrine/Inflector"
+                    "Doctrine\\Inflector\\": "lib/Doctrine/Inflector",
+                    "Doctrine\\Common\\Inflector\\": "lib/Doctrine/Common/Inflector"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1992,16 +1992,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.3.6",
+            "version": "9.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "2c0c89a0f49fab56f8322721888cdfa28fe98c3a"
+                "reference": "86b0c4496e20ae7f945e9a7f0404fafe191ab774"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/2c0c89a0f49fab56f8322721888cdfa28fe98c3a",
-                "reference": "2c0c89a0f49fab56f8322721888cdfa28fe98c3a",
+                "url": "https://api.github.com/repos/drupal/core/zipball/86b0c4496e20ae7f945e9a7f0404fafe191ab774",
+                "reference": "86b0c4496e20ae7f945e9a7f0404fafe191ab774",
                 "shasum": ""
             },
             "require": {
@@ -2243,9 +2243,9 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/9.3.6"
+                "source": "https://github.com/drupal/core/tree/9.3.9"
             },
-            "time": "2022-02-15T20:26:28+00:00"
+            "time": "2022-03-21T21:21:58+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
@@ -2340,16 +2340,16 @@
         },
         {
             "name": "drupal/core-recommended",
-            "version": "9.3.6",
+            "version": "9.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "1b24d3f87b55510f85d8495a63e141e601e32a88"
+                "reference": "3ce3f2b6145de56178e006fb2ef94089d32cf411"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/1b24d3f87b55510f85d8495a63e141e601e32a88",
-                "reference": "1b24d3f87b55510f85d8495a63e141e601e32a88",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/3ce3f2b6145de56178e006fb2ef94089d32cf411",
+                "reference": "3ce3f2b6145de56178e006fb2ef94089d32cf411",
                 "shasum": ""
             },
             "require": {
@@ -2358,11 +2358,11 @@
                 "doctrine/annotations": "1.13.2",
                 "doctrine/lexer": "1.2.1",
                 "doctrine/reflection": "1.2.2",
-                "drupal/core": "9.3.6",
+                "drupal/core": "9.3.9",
                 "egulias/email-validator": "3.1.2",
                 "guzzlehttp/guzzle": "6.5.5",
                 "guzzlehttp/promises": "1.5.1",
-                "guzzlehttp/psr7": "1.8.3",
+                "guzzlehttp/psr7": "1.8.5",
                 "laminas/laminas-diactoros": "2.8.0",
                 "laminas/laminas-escaper": "2.9.0",
                 "laminas/laminas-feed": "2.15.0",
@@ -2420,9 +2420,9 @@
             ],
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/9.3.6"
+                "source": "https://github.com/drupal/core-recommended/tree/9.3.9"
             },
-            "time": "2022-02-15T20:26:28+00:00"
+            "time": "2022-03-21T21:21:58+00:00"
         },
         {
             "name": "drupal/devel",
@@ -3015,12 +3015,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Promise\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -3074,16 +3074,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.8.3",
+            "version": "1.8.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "1afdd860a2566ed3c2b0b4a3de6e23434a79ec85"
+                "reference": "337e3ad8e5716c15f9657bd214d16cc5e69df268"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/1afdd860a2566ed3c2b0b4a3de6e23434a79ec85",
-                "reference": "1afdd860a2566ed3c2b0b4a3de6e23434a79ec85",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/337e3ad8e5716c15f9657bd214d16cc5e69df268",
+                "reference": "337e3ad8e5716c15f9657bd214d16cc5e69df268",
                 "shasum": ""
             },
             "require": {
@@ -3164,7 +3164,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/1.8.3"
+                "source": "https://github.com/guzzle/psr7/tree/1.8.5"
             },
             "funding": [
                 {
@@ -3180,7 +3180,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-10-05T13:56:00+00:00"
+            "time": "2022-03-20T21:51:18+00:00"
         },
         {
             "name": "laminas/laminas-diactoros",
@@ -5426,12 +5426,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Ctype\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -5807,7 +5807,7 @@
         },
         {
             "name": "symfony/polyfill-php72",
-            "version": "v1.24.0",
+            "version": "v1.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php72.git",
@@ -5863,7 +5863,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php72/tree/v1.24.0"
+                "source": "https://github.com/symfony/polyfill-php72/tree/v1.25.0"
             },
             "funding": [
                 {
@@ -5883,7 +5883,7 @@
         },
         {
             "name": "symfony/polyfill-php73",
-            "version": "v1.24.0",
+            "version": "v1.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php73.git",
@@ -5942,7 +5942,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php73/tree/v1.24.0"
+                "source": "https://github.com/symfony/polyfill-php73/tree/v1.25.0"
             },
             "funding": [
                 {
@@ -7736,16 +7736,16 @@
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v4.4.37",
+            "version": "v4.4.39",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "60d36408a3a48500bcc6e30d9f831e51d04d7fa4"
+                "reference": "4e9215a8b533802ba84a3cc5bd3c43103e7a6dc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/60d36408a3a48500bcc6e30d9f831e51d04d7fa4",
-                "reference": "60d36408a3a48500bcc6e30d9f831e51d04d7fa4",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/4e9215a8b533802ba84a3cc5bd3c43103e7a6dc3",
+                "reference": "4e9215a8b533802ba84a3cc5bd3c43103e7a6dc3",
                 "shasum": ""
             },
             "require": {
@@ -7790,7 +7790,7 @@
             "description": "Eases DOM navigation for HTML and XML documents",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/dom-crawler/tree/v4.4.37"
+                "source": "https://github.com/symfony/dom-crawler/tree/v4.4.39"
             },
             "funding": [
                 {
@@ -7806,7 +7806,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-02T09:41:36+00:00"
+            "time": "2022-02-25T10:38:15+00:00"
         }
     ],
     "aliases": [],
