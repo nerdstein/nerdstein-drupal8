@@ -50,7 +50,7 @@
     "config": {
         "sort-packages": true,
         "allow-plugins": {
-            "cweagens/composer-patches": true,
+            "cweagans/composer-patches": true,
             "composer/installers": true
         }
     },
