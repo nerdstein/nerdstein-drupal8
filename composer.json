@@ -51,7 +51,8 @@
         "sort-packages": true,
         "allow-plugins": {
             "cweagans/composer-patches": true,
-            "composer/installers": true
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true
         }
     },
     "autoload": {
