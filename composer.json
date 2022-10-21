@@ -52,7 +52,8 @@
         "allow-plugins": {
             "cweagans/composer-patches": true,
             "composer/installers": true,
-            "drupal/core-composer-scaffold": true
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true
         }
     },
     "autoload": {
