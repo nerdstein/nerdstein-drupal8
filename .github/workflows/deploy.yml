@@ -25,6 +25,7 @@ jobs:
         with:
           command: |
             cd ${{ secrets.DEPLOY_DIR }}
+            sudo -S ssh-keygen -f "/root/.ssh/known_hosts" -R "github.com"
             echo '${{ secrets.SSH_PASS }}' | sudo -S git fetch --all
             echo '${{ secrets.SSH_PASS }}' | sudo -S git reset --hard origin/master
             echo '${{ secrets.SSH_PASS }}' | sudo -S composer install --optimize-autoloader
